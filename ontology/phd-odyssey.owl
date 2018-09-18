@@ -47,6 +47,14 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
@@ -365,11 +373,7 @@
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-        <rdfs:label xml:lang="en">Author</rdfs:label>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
@@ -1105,6 +1109,21 @@
         <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
         <rdfs:label xml:lang="en">Stress</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Author</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
