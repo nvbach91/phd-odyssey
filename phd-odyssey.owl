@@ -1,12 +1,18 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://vivoweb.org/ontology/core/"
-     xml:base="http://vivoweb.org/ontology/core/"
+<rdf:RDF xmlns="http://ethereal.cz/ontology/phd#"
+     xml:base="http://ethereal.cz/ontology/phd"
+     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:scires="http://vivoweb.org/ontology/scientific-research#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+     xmlns:geopolitical="http://aims.fao.org/aos/geopolitical.owl#"
+     xmlns:phd="http://ethereal.cz/ontology/phd/"
+     xmlns:vitro="http://vitro.mannlib.cornell.edu/ns/vitro/0.7#"
+     xmlns:skos1="http://www.w3.org/2008/05/skos#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -14,14 +20,15 @@
      xmlns:vivo="http://vivoweb.org/ontology/core#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://vivoweb.org/ontology/core">
+    <owl:Ontology rdf:about="http://ethereal.cz/ontology/phd">
+        <owl:imports rdf:resource="http://www.w3.org/2006/vcard/ns"/>
         <owl:imports rdf:resource="http://vivoweb.org/ontology/core"/>
         <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
+        <owl:imports rdf:resource="http://purl.org/ontology/bibo/"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:imports rdf:resource="http://purl.org/dc/terms"/>
-        <dc:created>2018-09-07T12:51:41Z</dc:created>
-        <dc:creator>nvbach91</dc:creator>
         <owl:versionInfo xml:lang="en">Version 1.0 - The first ever version of the PhD Odyssey Ontology</owl:versionInfo>
         <terms:hasVersion>1.0</terms:hasVersion>
         <rdfs:label xml:lang="en">PhD Odyssey Ontology version 1.0</rdfs:label>
@@ -37,27 +44,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/created -->
-
-    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/created">
-        <rdfs:comment xml:lang="en">A timestamp of when the element was created.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-        <rdfs:label xml:lang="en">Created</rdfs:label>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/creator -->
-
-    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-        <rdfs:label xml:lang="en">Author</rdfs:label>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </rdf:Description>
     
 
 
@@ -92,6 +78,248 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/hasActivity -->
+
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/hasActivity">
+        <rdfs:domain rdf:resource="http://ethereal.cz/ontology/phd/Doctorand"/>
+        <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">has activity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/hasAssessment -->
+
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/hasAssessment">
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Project"/>
+        <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/Assessment"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">has subject</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/hasContributionIn -->
+
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/hasContributionIn">
+        <rdfs:domain rdf:resource="http://ethereal.cz/ontology/phd/Doctorand"/>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Project"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">has contribution in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/hasDeadline -->
+
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/hasDeadline">
+        <rdfs:domain rdf:resource="http://ethereal.cz/ontology/phd/Submission"/>
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Project"/>
+        <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/Deadline"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">has subject</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/hasExam -->
+
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/hasExam">
+        <rdfs:domain rdf:resource="http://ethereal.cz/ontology/phd/Doctorand"/>
+        <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/Exam"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">has exam</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/hasField -->
+
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/hasField">
+        <rdfs:domain rdf:resource="http://ethereal.cz/ontology/phd/PhD"/>
+        <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/Field"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">has field</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/hasGrant -->
+
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/hasGrant">
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Project"/>
+        <rdfs:range rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">has grant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/hasPhD -->
+
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/hasPhD">
+        <rdfs:domain rdf:resource="http://ethereal.cz/ontology/phd/Doctorand"/>
+        <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/PhD"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">has PhD</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/hasPublication -->
+
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/hasPublication">
+        <rdfs:domain rdf:resource="http://ethereal.cz/ontology/phd/Doctorand"/>
+        <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/Publication"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">has publication</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/hasQualification -->
+
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/hasQualification">
+        <rdfs:domain rdf:resource="http://ethereal.cz/ontology/phd/Doctorand"/>
+        <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/Qualification"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">has qualification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/hasResearchGroup -->
+
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/hasResearchGroup">
+        <rdfs:domain rdf:resource="http://ethereal.cz/ontology/phd/Institution"/>
+        <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/ResearchGroup"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">has research group</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/hasSkill -->
+
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/hasSkill">
+        <rdfs:domain rdf:resource="http://ethereal.cz/ontology/phd/Doctorand"/>
+        <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/Skill"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">has skill</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/hasStipend -->
+
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/hasStipend">
+        <rdfs:domain rdf:resource="http://ethereal.cz/ontology/phd/Doctorand"/>
+        <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/Stipend"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">has stipend</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/hasSubject -->
+
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/hasSubject">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/Subject"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">has subject</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/isMemberOfResearchGroup -->
+
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/isMemberOfResearchGroup">
+        <rdfs:domain rdf:resource="http://ethereal.cz/ontology/phd/Doctorand"/>
+        <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/ResearchGroup"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">is member of research group</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/isPublishedIn -->
+
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/isPublishedIn">
+        <rdfs:domain rdf:resource="http://ethereal.cz/ontology/phd/Publication"/>
+        <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/PublicationRepository"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">is published in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/hasAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://ethereal.cz/ontology/phd/hasAmount">
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">has amount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/hasCurrency -->
+
+    <owl:DatatypeProperty rdf:about="http://ethereal.cz/ontology/phd/hasCurrency">
+        <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">has currency</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/created -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/created">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">A timestamp of when the element was created</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Created</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Author</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -100,15 +328,546 @@
     
 
 
+    <!-- http://ethereal.cz/ontology/phd/AcademicJournal -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/AcademicJournal">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/PublicationRepository"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Academic journal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Activity -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Activity">
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Draft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Admission -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Admission">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Admission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Advisor -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Advisor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Role"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Advisor</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://ethereal.cz/ontology/phd/Supervisor"/>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/core#AdvisingRelationship"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Assessment -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Assessment">
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Assignment -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Assignment">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Duty"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Assignment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Consultation -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Consultation">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Consultation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Deadline -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Deadline">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Date"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Deadline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Degree -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Degree">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Qualification"/>
+        <rdfs:comment xml:lang="en">An academic rank conferred by a college or university after examination or after completion of a course, or conferred as an honour on a distinguished person.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Dissertation -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Dissertation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Dissertation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://purl.org/ontology/bibo/Thesis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/DoctoralStateExam -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/DoctoralStateExam">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Exam"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Doctoral state exam</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://ethereal.cz/ontology/phd/VivaVoce"/>
+    </owl:Class>
+    
+
+
     <!-- http://ethereal.cz/ontology/phd/Doctorand -->
 
     <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Doctorand">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Role"/>
         <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#GraduateStudent"/>
         <rdfs:comment xml:lang="en">A postgraduate aiming to receive a doctorate; a Ph.D. student.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
         <rdfs:label xml:lang="en">Doctorand aka. PhD Student</rdfs:label>
-        <dc:created>2018-09-07T13:52:02Z</dc:created>
-        <dc:creator>nvbach91</dc:creator>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Documentation -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Documentation">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Documentation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Draft -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Draft">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Draft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Duty -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Duty">
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Duty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Enrollment -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Enrollment">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Enrollment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Essay -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Essay">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Essay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Exam -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Exam">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Exam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Experiment -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Experiment">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Experiment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Field -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Field">
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Field of study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Fund -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Fund">
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Grant"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Fund</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Grade -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Grade">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Assessment"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Grade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Institution -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Institution">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Organization"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Institution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Internship -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Internship">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Internship</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Paper -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Paper">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Publication"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Article"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Paper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Paperwork -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Paperwork">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Paperwork</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/PhD -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/PhD">
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">The PhD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Presearch -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Presearch">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Presearch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Presentation -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Presentation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Presentation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/ProjectProposal -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/ProjectProposal">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Paper"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Project proposal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Publication -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Publication">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Publication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/PublicationRepository -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/PublicationRepository">
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Publication repository</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Qualification -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Qualification">
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Credential"/>
+        <rdfs:comment xml:lang="en">A credential attesting to an achievement</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Qualification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Reading -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Reading">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Reading</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Research -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Research">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Research</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/ResearchGroup -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/ResearchGroup">
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Association"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Research group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Researcher -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Researcher">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Role"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Researcher</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Revising -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Revising">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Revising</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Role -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Role">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Role"/>
+        <rdfs:comment xml:lang="en">A role from the point of view of a PhD student</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Scholar -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Scholar">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Role"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Scholar</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/core#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/ScientificJournal -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/ScientificJournal">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/AcademicJournal"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Scientific journal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Secretary -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Secretary">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Role"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Secretary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/SideProject -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/SideProject">
+        <rdfs:subClassOf rdf:resource="http://vivoweb.org/ontology/core#Project"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Side project</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Skill -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Skill">
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Skill</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Stipend -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Stipend">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Fund"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Stipend</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Subject -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Subject"/>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Submission -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Submission">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Submission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Supervision -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Supervision">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Supervision</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Supervisor -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Supervisor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/vcard/ns#Role"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Supervisor</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://ethereal.cz/ontology/phd/Advisor"/>
+        <rdfs:seeAlso rdf:resource="http://vivoweb.org/ontology/core#AdvisingRelationship"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Teaching -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Teaching">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Duty"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Teaching</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/ThesisDefense -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/ThesisDefense">
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Viva voce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/VivaVoce -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/VivaVoce">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Exam"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Viva voce</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://ethereal.cz/ontology/phd/DoctoralStateExam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/WriteUp -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/WriteUp">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Write-up</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ethereal.cz/ontology/phd/Writing -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Writing">
+        <rdfs:subClassOf rdf:resource="http://ethereal.cz/ontology/phd/Activity"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Writing</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
