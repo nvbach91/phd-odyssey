@@ -621,6 +621,16 @@
     
 
 
+    <!-- http://ethereal.cz/ontology/phd/Report -->
+
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Report">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/bibo/Document"/>
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Report</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://ethereal.cz/ontology/phd/ProjectProposal -->
 
     <owl:Class rdf:about="http://ethereal.cz/ontology/phd/ProjectProposal">
@@ -784,7 +794,10 @@
 
     <!-- http://ethereal.cz/ontology/phd/Subject -->
 
-    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Subject"/>
+    <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Subject">
+        <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+    </owl:Class>
     
 
 
