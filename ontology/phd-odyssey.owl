@@ -47,14 +47,6 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/creator -->
-
-    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </rdf:Description>
-    
-
-
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
@@ -111,7 +103,7 @@
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Project"/>
         <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/Assessment"/>
         <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
-        <rdfs:label xml:lang="en">has subject</rdfs:label>
+        <rdfs:label xml:lang="en">has assessment</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -134,7 +126,7 @@
         <rdfs:domain rdf:resource="http://vivoweb.org/ontology/core#Project"/>
         <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/Deadline"/>
         <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
-        <rdfs:label xml:lang="en">has subject</rdfs:label>
+        <rdfs:label xml:lang="en">has deadline</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -294,13 +286,13 @@
     
 
 
-    <!-- http://ethereal.cz/ontology/phd/isMemberOfResearchGroup -->
+    <!-- http://ethereal.cz/ontology/phd/isMemberOf -->
 
-    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/isMemberOfResearchGroup">
+    <owl:ObjectProperty rdf:about="http://ethereal.cz/ontology/phd/isMemberOf">
         <rdfs:domain rdf:resource="http://ethereal.cz/ontology/phd/Doctorand"/>
         <rdfs:range rdf:resource="http://ethereal.cz/ontology/phd/ResearchGroup"/>
         <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
-        <rdfs:label xml:lang="en">is member of research group</rdfs:label>
+        <rdfs:label xml:lang="en">is member of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -360,20 +352,25 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/created -->
+    <!-- http://purl.org/dc/elements/1.1/creator -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/created">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment xml:lang="en">A timestamp of when the element was created</rdfs:comment>
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The person who created this element</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-        <rdfs:label xml:lang="en">Created</rdfs:label>
+        <rdfs:label xml:lang="en">Author</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/creator -->
+    <!-- http://purl.org/dc/terms/created -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">A timestamp of when the element was created</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/terms"/>
+        <rdfs:label xml:lang="en">Created</rdfs:label>
+    </rdf:Description>
     
 
 
@@ -1109,21 +1106,6 @@
         <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
         <rdfs:label xml:lang="en">Stress</rdfs:label>
     </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-        <rdfs:label xml:lang="en">Author</rdfs:label>
-    </rdf:Description>
 </rdf:RDF>
 
 
