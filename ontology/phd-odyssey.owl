@@ -591,7 +591,7 @@
     <!-- http://ethereal.cz/ontology/phd/Exam -->
 
     <owl:Class rdf:about="http://ethereal.cz/ontology/phd/Exam">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Event"/>
         <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
         <rdfs:label xml:lang="en">Exam</rdfs:label>
     </owl:Class>
@@ -729,7 +729,7 @@
     <!-- http://ethereal.cz/ontology/phd/ProgramRegistration -->
 
     <owl:Class rdf:about="http://ethereal.cz/ontology/phd/ProgramRegistration">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Event"/>
         <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
         <rdfs:label xml:lang="en">Program registration</rdfs:label>
     </owl:Class>
@@ -990,7 +990,7 @@
     <!-- http://ethereal.cz/ontology/phd/ThesisDefense -->
 
     <owl:Class rdf:about="http://ethereal.cz/ontology/phd/ThesisDefense">
-        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:subClassOf rdf:resource="http://schema.org/Event"/>
         <rdfs:isDefinedBy rdf:resource="http://ethereal.cz/ontology/phd"/>
         <rdfs:label xml:lang="en">Viva voce</rdfs:label>
     </owl:Class>

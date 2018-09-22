@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:ns0="http://purl.org/vocab/vann/"
+         xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#">
+
+  <owl:Ontology rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#">
+    <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-09</dc:issued>
+    <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-06-09</dc:date>
+    <dc:title>OLOUD: Ontology for Linked Open University Data</dc:title>
+    <ns0:preferredNamespacePrefix>oloud</ns0:preferredNamespacePrefix>
+    <ns0:preferredNamespaceUri>http://lod.nik.uni-obuda.hu/oloud/oloud#</ns0:preferredNamespaceUri>
+    <dc:description xml:lang="en">The objectives of the OLOUD ontology is to support the development and publishing of Linked Open University Datasets and the applications built on the top of these Open Datasets. OLOUD contains classes and properties to describe Curriculum, Subjects, Courses, University events and their temporal and spatial description. The ontology is divided into two connected modules: 1. OLOUD is the main module describing all the university related concepts and uses the prefix oloud, 2. OLOUD-TIME module provides the time related features and uses the prefix otime.</dc:description>
+    <dc:identifier>http://lod.nik.uni-obuda.hu/oloud/oloud-20160609</dc:identifier>
+    <dc:isVersionOf>http://lod.nik.uni-obuda.hu/oloud/oloud#</dc:isVersionOf>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    <dc:creator rdf:resource="http://lod.nik.uni-obuda.hu/data/András_Micsik"/>
+    <dc:creator rdf:resource="http://lod.nik.uni-obuda.hu/data/Barnabás_Szász"/>
+    <dc:creator rdf:resource="http://lod.nik.uni-obuda.hu/data/Rita_Fleiner"/>
+    <owl:imports rdf:resource="http://lod.nik.uni-obuda.hu/iloc/iloc#"/>
+    <owl:imports rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud-time#"/>
+    <owl:imports rdf:resource="http://purl.org/NET/c4dm/event.owl"/>
+    <owl:imports rdf:resource="http://purl.org/vocab/aiiso/schema-20080925.rdf"/>
+    <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
+    <owl:imports rdf:resource="http://xmlns.com/foaf/spec/20140114.rdf"/>
+  </owl:Ontology>
+
+  <owl:ObjectProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#courseSubject">
+    <rdfs:label xml:lang="en">course subject</rdfs:label>
+    <rdfs:comment xml:lang="en">This property connects the spesific course with its subject .</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/aiiso/schema#Subject"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#courseTeacher">
+    <rdfs:label xml:lang="en">course teacher</rdfs:label>
+    <rdfs:comment xml:lang="en">This property connects the specific course with its teacher.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+    <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#courseTerm">
+    <rdfs:label xml:lang="en">course term</rdfs:label>
+    <rdfs:comment xml:lang="en">This property shows the course term when the specific course is hold.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+    <rdfs:range>
+      <owl:Class rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#CourseTerm">
+        <rdfs:label xml:lang="en">Course term</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#Interval"/>
+        <rdfs:comment xml:lang="en">Course term is a portion of the academic year, the time during which an educational institution holds classes.</rdfs:comment>
+        <ns1:term_status xml:lang="en">stable</ns1:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+      </owl:Class>
+    </rdfs:range>
+
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#courseTime">
+    <rdfs:label xml:lang="en">course time</rdfs:label>
+    <rdfs:comment xml:lang="en">This property links a specific course to a temporal sequence of individual course events.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#hasTemporalSeq">
+        <rdfs:label xml:lang="en">has Temporal Sequence</rdfs:label>
+        <rdfs:comment xml:lang="en">This property links a recurring event to a temporal sequence of individual events.</rdfs:comment>
+        <ns1:term_status xml:lang="en">stable</ns1:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+        <rdfs:range rdf:resource="http://ontology.ihmc.us/temporalAggregates.owl#TemporalSeq"/>
+      </owl:ObjectProperty>
+    </rdfs:subPropertyOf>
+
+    <rdfs:range>
+      <owl:Class rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#CourseTime">
+        <rdfs:label xml:lang="en">Course time</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://ontology.ihmc.us/temporalAggregates.owl#TemporalSeq"/>
+        <rdfs:comment xml:lang="en">Course time represents the temporal sequence when a specific course is hold.</rdfs:comment>
+        <ns1:term_status xml:lang="en">stable</ns1:term_status>
+        <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+      </owl:Class>
+    </rdfs:range>
+
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#courseType">
+    <rdfs:label xml:lang="en">course type</rdfs:label>
+    <rdfs:comment xml:lang="en">This property connects the specific course with its course type.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+    <rdfs:range rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#CourseType"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#locatedAt">
+    <rdfs:label xml:lang="en">located at</rdfs:label>
+    <rdfs:comment xml:lang="en">This property shows the location of the event or the course.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:range rdf:resource="http://lod.nik.uni-obuda.hu/iloc/iloc#Location"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://purl.org/vocab/aiiso/schema#Course"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </owl:unionOf>
+
+      </owl:Class>
+    </rdfs:domain>
+
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#degree">
+    <rdfs:label xml:lang="en">degree</rdfs:label>
+    <rdfs:comment xml:lang="en">This property shows the academic degree of the subject or the curriculum.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:range rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#Degree"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#studyProgramme">
+    <rdfs:label xml:lang="en">study programme</rdfs:label>
+    <rdfs:comment xml:lang="en">This property shows the Study Programme that the certain Subject or Curriculum belongs to.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/aiiso/schema#Programme"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#attendancePattern">
+    <rdfs:label xml:lang="en">attendance pattern</rdfs:label>
+    <rdfs:comment xml:lang="en">This property shows the Attendance Pattern of the subject or curriculum.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:range rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#AttendancePattern"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#specialization">
+    <rdfs:label xml:lang="en">specialization</rdfs:label>
+    <rdfs:comment xml:lang="en">This property shows the Specialization that a specific Curriculum has or the Specialization of a Subject.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:range rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#Specialization"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#curriculum">
+    <rdfs:label xml:lang="en">curriculum</rdfs:label>
+    <rdfs:comment xml:lang="en">This property shows the Curriculum where the Subject belongs to.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:range rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#Curriculum"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Subject"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#subjectRequires">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="en">subject requires</rdfs:label>
+    <rdfs:comment xml:lang="en">This property shows the prerequisite of a Subject.</rdfs:comment>
+    <rdfs:comment xml:lang="en">This property shows the name of the subject which completion is necessary in order to start a course of the certain subject.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:range rdf:resource="http://purl.org/vocab/aiiso/schema#Subject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Subject"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#startDate">
+    <rdfs:label xml:lang="en">start date</rdfs:label>
+    <rdfs:comment xml:lang="en">This property shows the time when a curriculum comes into force.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:domain rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#Curriculum"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#endDate">
+    <rdfs:label xml:lang="en">end date</rdfs:label>
+    <rdfs:comment xml:lang="en">This property shows the time when a curriculum becomes void.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:domain rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#Curriculum"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2006/time#Instant"/>
+  </owl:ObjectProperty>
+
+  <owl:DatatypeProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#subjectCredit">
+    <rdfs:label xml:lang="en">subject credit</rdfs:label>
+    <rdfs:comment xml:lang="en">Subject credit is a unit that gives weight to the value, level or time requirements of the subject taken at the university.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Subject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#subjectLabNo">
+    <rdfs:label xml:lang="en">subject lab number</rdfs:label>
+    <rdfs:comment xml:lang="en">The number of Laboratory units that a given Subject contains per week.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Subject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#subjectLectureNo">
+    <rdfs:label xml:lang="en">subject lecture number</rdfs:label>
+    <rdfs:label xml:lang="en">subject practise number</rdfs:label>
+    <rdfs:comment xml:lang="en">The number of Lecture units that a given Subject contains per week.</rdfs:comment>
+    <rdfs:comment xml:lang="en">The number of Practice units that a given Subject contains per week.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+    <rdfs:domain rdf:resource="http://purl.org/vocab/aiiso/schema#Subject"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </owl:DatatypeProperty>
+
+  <owl:Class rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#Curriculum">
+    <rdfs:label xml:lang="en">Curriculum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
+    <rdfs:comment xml:lang="en">After enrolling to the university each student is assigned to a Curriculum, which is a set of Subjects and their relations (i.e. dependencies among the subjects) that a student has to accomplish.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#Degree">
+    <rdfs:label xml:lang="en">Degree</rdfs:label>
+    <rdfs:comment xml:lang="en">An academic degree is the state of recognized completion of studies at a college or university. The most common degrees awarded today are bachelor's, master's and doctoral degrees.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#AttendancePattern">
+    <rdfs:label xml:lang="en">Attendance Pattern</rdfs:label>
+    <rdfs:comment xml:lang="en">Type of the training, which can be full-time, part-time (at the evenings) or correspondence (at the weekends).</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#Specialization">
+    <rdfs:label xml:lang="en">Specialization</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.org/vocab/aiiso/schema#KnowledgeGrouping"/>
+    <rdfs:comment xml:lang="en">The specialization can be acquired as part of the Study Programme, providing special expertise in training, which is indicated on the proof of successful completion of the university diploma.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#CourseType">
+    <rdfs:label xml:lang="en">Course type</rdfs:label>
+    <rdfs:comment xml:lang="en">Course type represents the different formats (e.g. lecture, seminar, laboratory or practice) of courses at universities.</rdfs:comment>
+    <ns1:term_status xml:lang="en">stable</ns1:term_status>
+    <rdfs:isDefinedBy rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#"/>
+  </owl:Class>
+
+  <rdf:Description rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#Lab">
+    <rdf:type rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#CourseType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#ExamCourse">
+    <rdf:type rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#CourseType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#Lecture">
+    <rdf:type rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#CourseType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#Practise">
+    <rdf:type rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#CourseType"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#ComputerEngineer">
+    <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Programme"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#EngineerTeacher">
+    <rdf:type rdf:resource="http://purl.org/vocab/aiiso/schema#Programme"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#BSc">
+    <rdf:type rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#Degree"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#MSc">
+    <rdf:type rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#Degree"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#PhD">
+    <rdf:type rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#Degree"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#ObligatoryPart">
+    <rdf:type rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#Specialization"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#Elective">
+    <rdf:type rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#Specialization"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#FullTime">
+    <rdf:type rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#AttendancePattern"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#Correspondance">
+    <rdf:type rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#AttendancePattern"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://lod.nik.uni-obuda.hu/oloud/oloud#PartTime">
+    <rdf:type rdf:resource="http://lod.nik.uni-obuda.hu/oloud/oloud#AttendancePattern"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+
+</rdf:RDF>
