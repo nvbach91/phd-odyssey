@@ -1,272 +1,271 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE rdf:RDF[
-	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
-	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
-	<!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
-	<!ENTITY swivt 'http://semantic-mediawiki.org/swivt/1.0#'>
-	<!ENTITY wiki 'http://www.aifb.kit.edu/id/'>
-	<!ENTITY property 'http://www.aifb.kit.edu/id/Attribut-3A'>
-	<!ENTITY wikiurl 'http://www.aifb.kit.edu/web/'>
+    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+<!ENTITY owl 'http://www.w3.org/2002/07/owl#'>
+<!ENTITY swivt 'http://semantic-mediawiki.org/swivt/1.0#'>
+<!ENTITY wiki 'http://www.aifb.kit.edu/id/'>
+<!ENTITY property 'http://www.aifb.kit.edu/id/Attribut-3A'>
+<!ENTITY wikiurl 'http://www.aifb.kit.edu/web/'>
 ]>
 
-<rdf:RDF
-	xmlns:rdf="&rdf;"
-	xmlns:rdfs="&rdfs;"
-	xmlns:owl ="&owl;"
-	xmlns:swivt="&swivt;"
-	xmlns:wiki="&wiki;"
-	xmlns:property="&property;"
-	xmlns:foaf="http://xmlns.com/foaf/0.1/">
-	<!-- Ontology header -->
-	<owl:Ontology rdf:about="&wikiurl;Spezial:ExportRDF/SWRC">
-		<swivt:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-22T03:07:05+02:00</swivt:creationDate>
-		<owl:imports rdf:resource="http://semantic-mediawiki.org/swivt/1.0" />
-	</owl:Ontology>
-	<!-- exported page data -->
-	<swivt:Subject rdf:about="&wiki;SWRC">
-		<rdfs:label>SWRC</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;SWRC"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/SWRC"/>
-		<rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
-		<property:Beschreibung_DE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The SWRC is an ontology for modeling a research community, including persons, organizations, and bibliographic metadata. It is used in various projects and applications, such as Bibster, the AIFB portal, and the SemIPort projects.</property:Beschreibung_DE>
-		<property:Beschreibung_EN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The SWRC is an ontology for modeling a research community, including persons, organizations, and bibliographic metadata. It is used in various projects and applications, such as Bibster, the AIFB portal, and the SemIPort projects.</property:Beschreibung_EN>
-		<foaf:interest rdf:resource="&wiki;Wissensportale"/>
-		<foaf:interest rdf:resource="&wiki;Ontologiemodellierung"/>
-		<foaf:interest rdf:resource="&wiki;Semantic_Web_Infrastructure"/>
-		<foaf:interest rdf:resource="&wiki;Semantische_Annotierung"/>
-		<foaf:interest rdf:resource="&wiki;Web_Science"/>
-		<foaf:interest rdf:resource="&wiki;Semantic_Web"/>
-		<foaf:interest rdf:resource="&wiki;Semantische_Web_Dienste"/>
-		<foaf:interest rdf:resource="&wiki;Ontologiebasierte_Wissensmanagementsysteme"/>
-		<foaf:interest rdf:resource="&wiki;Wissensmanagementsysteme"/>
-		<foaf:interest rdf:resource="&wiki;Wissensrepr-C3-A4sentation"/>
-		<foaf:interest rdf:resource="&wiki;Semantische_Annotation"/>
-		<foaf:interest rdf:resource="&wiki;Ontology_Engineering"/>
-		<foaf:interest rdf:resource="&wiki;Ontology_Learning"/>
-		<property:Forschungsgruppe rdf:resource="&wiki;Web_Science"/>
-		<property:Kurzname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SWRC</property:Kurzname>
-		<property:Logo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Onto-logo.gif</property:Logo>
-		<property:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semantic Web for Research Communities</property:Name>
-		<property:Name_EN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semantic Web for Research Communities</property:Name_EN>
-		<property:Partner rdf:resource="&wiki;AIFB"/>
-		<property:Person rdf:resource="&wiki;Jens_Hartmann"/>
-		<property:Person rdf:resource="&wiki;Peter_Haase"/>
-		<property:Person rdf:resource="&wiki;Daniel_Oberle"/>
-		<property:Person rdf:resource="&wiki;York_Sure-2DVetter"/>
-		<property:Projektstatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abgeschlossen</property:Projektstatus>
-		<property:URL rdf:resource="http://ontoware.org/projects/swrc/"/>
-		<property:Video rdf:resource="http://%7B%7B%7BVideo%7D%7D%7D"/>
-		<property:Vorg-C3-A4ngerprojekt rdf:resource="&wiki;(KA)2"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Ontology">
-		<rdfs:label>Ontology</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Ontology"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Ontology"/>
-		<property:Vorg-C3-A4ngerprojekt rdf:resource="&wiki;SWRC"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Inproceedings448">
-		<rdfs:label>Inproceedings448</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Inproceedings448"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Inproceedings448"/>
-		<property:Projekt rdf:resource="&wiki;SWRC"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Inproceedings1003">
-		<rdfs:label>Inproceedings1003</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Inproceedings1003"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Inproceedings1003"/>
-		<property:Projekt rdf:resource="&wiki;SWRC"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Inproceedings698">
-		<rdfs:label>Inproceedings698</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Inproceedings698"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Inproceedings698"/>
-		<property:Projekt rdf:resource="&wiki;SWRC"/>
-	</swivt:Subject>
-	<!-- auxiliary definitions -->
-	<owl:ObjectProperty rdf:about="&property;Projekt">
-		<rdfs:label>Projekt</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Attribut:Projekt"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Projekt"/>
-	</owl:ObjectProperty>
-	<swivt:Subject rdf:about="&wiki;(KA)2">
-		<rdfs:label>(KA)2</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;(KA)2"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/(KA)2"/>
-	</swivt:Subject>
-	<owl:ObjectProperty rdf:about="&property;Vorg-C3-A4ngerprojekt">
-		<rdfs:label>Vorgängerprojekt</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Attribut:Vorg%C3%A4ngerprojekt"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Vorg%C3%A4ngerprojekt"/>
-	</owl:ObjectProperty>
-	<owl:ObjectProperty rdf:about="&property;Video">
-		<rdfs:label>Video</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Attribut:Video"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Video"/>
-	</owl:ObjectProperty>
-	<owl:ObjectProperty rdf:about="&property;URL">
-		<rdfs:label>URL</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Attribut:URL"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:URL"/>
-	</owl:ObjectProperty>
-	<owl:DatatypeProperty rdf:about="&property;Projektstatus">
-		<rdfs:label>Projektstatus</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Attribut:Projektstatus"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Projektstatus"/>
-	</owl:DatatypeProperty>
-	<swivt:Subject rdf:about="&wiki;York_Sure-2DVetter">
-		<rdfs:label>York Sure-Vetter</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;York_Sure-Vetter"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/York_Sure-Vetter"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Daniel_Oberle">
-		<rdfs:label>Daniel Oberle</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Daniel_Oberle"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Daniel_Oberle"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Peter_Haase">
-		<rdfs:label>Peter Haase</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Peter_Haase"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Peter_Haase"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Jens_Hartmann">
-		<rdfs:label>Jens Hartmann</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Jens_Hartmann"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Jens_Hartmann"/>
-	</swivt:Subject>
-	<owl:ObjectProperty rdf:about="&property;Person">
-		<rdfs:label>Person</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Attribut:Person"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Person"/>
-	</owl:ObjectProperty>
-	<swivt:Subject rdf:about="&wiki;AIFB">
-		<rdfs:label>AIFB</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;AIFB"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/AIFB"/>
-	</swivt:Subject>
-	<owl:ObjectProperty rdf:about="&property;Partner">
-		<rdfs:label>Partner</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Attribut:Partner"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Partner"/>
-	</owl:ObjectProperty>
-	<owl:DatatypeProperty rdf:about="&property;Name_EN">
-		<rdfs:label>Name EN</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Attribut:Name_EN"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Name_EN"/>
-	</owl:DatatypeProperty>
-	<owl:DatatypeProperty rdf:about="&property;Name">
-		<rdfs:label>Name</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Attribut:Name"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Name"/>
-	</owl:DatatypeProperty>
-	<owl:DatatypeProperty rdf:about="&property;Logo">
-		<rdfs:label>Logo</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Attribut:Logo"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Logo"/>
-	</owl:DatatypeProperty>
-	<owl:DatatypeProperty rdf:about="&property;Kurzname">
-		<rdfs:label>Kurzname</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Attribut:Kurzname"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Kurzname"/>
-	</owl:DatatypeProperty>
-	<owl:ObjectProperty rdf:about="&property;Forschungsgruppe">
-		<rdfs:label>Forschungsgruppe</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Attribut:Forschungsgruppe"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Forschungsgruppe"/>
-	</owl:ObjectProperty>
-	<swivt:Subject rdf:about="&wiki;Ontology_Learning">
-		<rdfs:label>Ontology Learning</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Ontology_Learning"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Ontology_Learning"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Ontology_Engineering">
-		<rdfs:label>Ontology Engineering</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Ontology_Engineering"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Ontology_Engineering"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Semantische_Annotation">
-		<rdfs:label>Semantische Annotation</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Semantische_Annotation"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Semantische_Annotation"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Wissensrepr-C3-A4sentation">
-		<rdfs:label>Wissensrepräsentation</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Wissensrepr%C3%A4sentation"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Wissensrepr%C3%A4sentation"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Wissensmanagementsysteme">
-		<rdfs:label>Wissensmanagementsysteme</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Wissensmanagementsysteme"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Wissensmanagementsysteme"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Ontologiebasierte_Wissensmanagementsysteme">
-		<rdfs:label>Ontologiebasierte Wissensmanagementsysteme</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Ontologiebasierte_Wissensmanagementsysteme"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Ontologiebasierte_Wissensmanagementsysteme"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Semantische_Web_Dienste">
-		<rdfs:label>Semantische Web Dienste</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Semantische_Web_Dienste"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Semantische_Web_Dienste"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Semantic_Web">
-		<rdfs:label>Semantic Web</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Semantic_Web"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Semantic_Web"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Web_Science">
-		<rdfs:label>Web Science</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Web_Science"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Web_Science"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Semantische_Annotierung">
-		<rdfs:label>Semantische Annotierung</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Semantische_Annotierung"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Semantische_Annotierung"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Semantic_Web_Infrastructure">
-		<rdfs:label>Semantic Web Infrastructure</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Semantic_Web_Infrastructure"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Semantic_Web_Infrastructure"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Ontologiemodellierung">
-		<rdfs:label>Ontologiemodellierung</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Ontologiemodellierung"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Ontologiemodellierung"/>
-	</swivt:Subject>
-	<swivt:Subject rdf:about="&wiki;Wissensportale">
-		<rdfs:label>Wissensportale</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Wissensportale"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Wissensportale"/>
-	</swivt:Subject>
-	<owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/interest">
-		<rdfs:label>Forschungsgebiet</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Attribut:Forschungsgebiet"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Forschungsgebiet"/>
-	</owl:ObjectProperty>
-	<owl:DatatypeProperty rdf:about="&property;Beschreibung_EN">
-		<rdfs:label>Beschreibung EN</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Attribut:Beschreibung_EN"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Beschreibung_EN"/>
-	</owl:DatatypeProperty>
-	<owl:DatatypeProperty rdf:about="&property;Beschreibung_DE">
-		<rdfs:label>Beschreibung DE</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Attribut:Beschreibung_DE"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Beschreibung_DE"/>
-	</owl:DatatypeProperty>
-	<owl:Class rdf:about="http://xmlns.com/foaf/0.1/Project">
-		<rdfs:label>Projekt</rdfs:label>
-		<swivt:page rdf:resource="&wikiurl;Kategorie:Projekt"/>
-		<rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Kategorie:Projekt"/>
-	</owl:Class>
-	<!-- References to the SWiVT Ontology, see http://semantic-mediawiki.org/swivt/ -->
-	<owl:AnnotationProperty rdf:about="&swivt;page">
-		<rdfs:isDefinedBy rdf:resource="http://semantic-mediawiki.org/swivt/1.0"/>
-	</owl:AnnotationProperty>
-	<owl:AnnotationProperty rdf:about="&swivt;creationDate">
-		<rdfs:isDefinedBy rdf:resource="http://semantic-mediawiki.org/swivt/1.0"/>
-	</owl:AnnotationProperty>
-	<owl:Class rdf:about="&swivt;Subject">
-		<rdfs:isDefinedBy rdf:resource="http://semantic-mediawiki.org/swivt/1.0"/>
-	</owl:Class>
-	<!-- Created by Semantic MediaWiki, http://semantic-mediawiki.org -->
+<rdf:RDF xmlns:rdf="&rdf;" 
+    xmlns:rdfs="&rdfs;"
+    xmlns:owl ="&owl;" 
+    xmlns:swivt="&swivt;" 
+    xmlns:wiki="&wiki;" 
+    xmlns:property="&property;" 
+    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <!-- Ontology header -->
+    <owl:Ontology rdf:about="&wikiurl;Spezial:ExportRDF/SWRC">
+        <swivt:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-09-22T03:07:05+02:00</swivt:creationDate>
+        <owl:imports rdf:resource="http://semantic-mediawiki.org/swivt/1.0" />
+    </owl:Ontology>
+    <!-- exported page data -->
+    <swivt:Subject rdf:about="&wiki;SWRC">
+        <rdfs:label>SWRC</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;SWRC"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/SWRC"/>
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Project"/>
+        <property:Beschreibung_DE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The SWRC is an ontology for modeling a research community, including persons, organizations, and bibliographic metadata. It is used in various projects and applications, such as Bibster, the AIFB portal, and the SemIPort projects.</property:Beschreibung_DE>
+        <property:Beschreibung_EN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The SWRC is an ontology for modeling a research community, including persons, organizations, and bibliographic metadata. It is used in various projects and applications, such as Bibster, the AIFB portal, and the SemIPort projects.</property:Beschreibung_EN>
+        <foaf:interest rdf:resource="&wiki;Wissensportale"/>
+        <foaf:interest rdf:resource="&wiki;Ontologiemodellierung"/>
+        <foaf:interest rdf:resource="&wiki;Semantic_Web_Infrastructure"/>
+        <foaf:interest rdf:resource="&wiki;Semantische_Annotierung"/>
+        <foaf:interest rdf:resource="&wiki;Web_Science"/>
+        <foaf:interest rdf:resource="&wiki;Semantic_Web"/>
+        <foaf:interest rdf:resource="&wiki;Semantische_Web_Dienste"/>
+        <foaf:interest rdf:resource="&wiki;Ontologiebasierte_Wissensmanagementsysteme"/>
+        <foaf:interest rdf:resource="&wiki;Wissensmanagementsysteme"/>
+        <foaf:interest rdf:resource="&wiki;Wissensrepr-C3-A4sentation"/>
+        <foaf:interest rdf:resource="&wiki;Semantische_Annotation"/>
+        <foaf:interest rdf:resource="&wiki;Ontology_Engineering"/>
+        <foaf:interest rdf:resource="&wiki;Ontology_Learning"/>
+        <property:Forschungsgruppe rdf:resource="&wiki;Web_Science"/>
+        <property:Kurzname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SWRC</property:Kurzname>
+        <property:Logo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Onto-logo.gif</property:Logo>
+        <property:Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semantic Web for Research Communities</property:Name>
+        <property:Name_EN rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semantic Web for Research Communities</property:Name_EN>
+        <property:Partner rdf:resource="&wiki;AIFB"/>
+        <property:Person rdf:resource="&wiki;Jens_Hartmann"/>
+        <property:Person rdf:resource="&wiki;Peter_Haase"/>
+        <property:Person rdf:resource="&wiki;Daniel_Oberle"/>
+        <property:Person rdf:resource="&wiki;York_Sure-2DVetter"/>
+        <property:Projektstatus rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abgeschlossen</property:Projektstatus>
+        <property:URL rdf:resource="http://ontoware.org/projects/swrc/"/>
+        <property:Video rdf:resource="http://%7B%7B%7BVideo%7D%7D%7D"/>
+        <property:Vorg-C3-A4ngerprojekt rdf:resource="&wiki;(KA)2"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Ontology">
+        <rdfs:label>Ontology</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Ontology"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Ontology"/>
+        <property:Vorg-C3-A4ngerprojekt rdf:resource="&wiki;SWRC"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Inproceedings448">
+        <rdfs:label>Inproceedings448</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Inproceedings448"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Inproceedings448"/>
+        <property:Projekt rdf:resource="&wiki;SWRC"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Inproceedings1003">
+        <rdfs:label>Inproceedings1003</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Inproceedings1003"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Inproceedings1003"/>
+        <property:Projekt rdf:resource="&wiki;SWRC"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Inproceedings698">
+        <rdfs:label>Inproceedings698</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Inproceedings698"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Inproceedings698"/>
+        <property:Projekt rdf:resource="&wiki;SWRC"/>
+    </swivt:Subject>
+    <!-- auxiliary definitions -->
+    <owl:ObjectProperty rdf:about="&property;Projekt">
+        <rdfs:label>Projekt</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Attribut:Projekt"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Projekt"/>
+    </owl:ObjectProperty>
+    <swivt:Subject rdf:about="&wiki;(KA)2">
+        <rdfs:label>(KA)2</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;(KA)2"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/(KA)2"/>
+    </swivt:Subject>
+    <owl:ObjectProperty rdf:about="&property;Vorg-C3-A4ngerprojekt">
+        <rdfs:label>Vorgängerprojekt</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Attribut:Vorg%C3%A4ngerprojekt"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Vorg%C3%A4ngerprojekt"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="&property;Video">
+        <rdfs:label>Video</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Attribut:Video"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Video"/>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="&property;URL">
+        <rdfs:label>URL</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Attribut:URL"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:URL"/>
+    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:about="&property;Projektstatus">
+        <rdfs:label>Projektstatus</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Attribut:Projektstatus"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Projektstatus"/>
+    </owl:DatatypeProperty>
+    <swivt:Subject rdf:about="&wiki;York_Sure-2DVetter">
+        <rdfs:label>York Sure-Vetter</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;York_Sure-Vetter"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/York_Sure-Vetter"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Daniel_Oberle">
+        <rdfs:label>Daniel Oberle</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Daniel_Oberle"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Daniel_Oberle"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Peter_Haase">
+        <rdfs:label>Peter Haase</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Peter_Haase"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Peter_Haase"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Jens_Hartmann">
+        <rdfs:label>Jens Hartmann</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Jens_Hartmann"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Jens_Hartmann"/>
+    </swivt:Subject>
+    <owl:ObjectProperty rdf:about="&property;Person">
+        <rdfs:label>Person</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Attribut:Person"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Person"/>
+    </owl:ObjectProperty>
+    <swivt:Subject rdf:about="&wiki;AIFB">
+        <rdfs:label>AIFB</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;AIFB"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/AIFB"/>
+    </swivt:Subject>
+    <owl:ObjectProperty rdf:about="&property;Partner">
+        <rdfs:label>Partner</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Attribut:Partner"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Partner"/>
+    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:about="&property;Name_EN">
+        <rdfs:label>Name EN</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Attribut:Name_EN"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Name_EN"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="&property;Name">
+        <rdfs:label>Name</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Attribut:Name"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Name"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="&property;Logo">
+        <rdfs:label>Logo</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Attribut:Logo"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Logo"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="&property;Kurzname">
+        <rdfs:label>Kurzname</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Attribut:Kurzname"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Kurzname"/>
+    </owl:DatatypeProperty>
+    <owl:ObjectProperty rdf:about="&property;Forschungsgruppe">
+        <rdfs:label>Forschungsgruppe</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Attribut:Forschungsgruppe"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Forschungsgruppe"/>
+    </owl:ObjectProperty>
+    <swivt:Subject rdf:about="&wiki;Ontology_Learning">
+        <rdfs:label>Ontology Learning</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Ontology_Learning"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Ontology_Learning"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Ontology_Engineering">
+        <rdfs:label>Ontology Engineering</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Ontology_Engineering"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Ontology_Engineering"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Semantische_Annotation">
+        <rdfs:label>Semantische Annotation</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Semantische_Annotation"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Semantische_Annotation"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Wissensrepr-C3-A4sentation">
+        <rdfs:label>Wissensrepräsentation</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Wissensrepr%C3%A4sentation"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Wissensrepr%C3%A4sentation"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Wissensmanagementsysteme">
+        <rdfs:label>Wissensmanagementsysteme</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Wissensmanagementsysteme"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Wissensmanagementsysteme"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Ontologiebasierte_Wissensmanagementsysteme">
+        <rdfs:label>Ontologiebasierte Wissensmanagementsysteme</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Ontologiebasierte_Wissensmanagementsysteme"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Ontologiebasierte_Wissensmanagementsysteme"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Semantische_Web_Dienste">
+        <rdfs:label>Semantische Web Dienste</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Semantische_Web_Dienste"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Semantische_Web_Dienste"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Semantic_Web">
+        <rdfs:label>Semantic Web</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Semantic_Web"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Semantic_Web"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Web_Science">
+        <rdfs:label>Web Science</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Web_Science"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Web_Science"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Semantische_Annotierung">
+        <rdfs:label>Semantische Annotierung</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Semantische_Annotierung"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Semantische_Annotierung"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Semantic_Web_Infrastructure">
+        <rdfs:label>Semantic Web Infrastructure</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Semantic_Web_Infrastructure"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Semantic_Web_Infrastructure"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Ontologiemodellierung">
+        <rdfs:label>Ontologiemodellierung</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Ontologiemodellierung"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Ontologiemodellierung"/>
+    </swivt:Subject>
+    <swivt:Subject rdf:about="&wiki;Wissensportale">
+        <rdfs:label>Wissensportale</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Wissensportale"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Wissensportale"/>
+    </swivt:Subject>
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/interest">
+        <rdfs:label>Forschungsgebiet</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Attribut:Forschungsgebiet"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Forschungsgebiet"/>
+    </owl:ObjectProperty>
+    <owl:DatatypeProperty rdf:about="&property;Beschreibung_EN">
+        <rdfs:label>Beschreibung EN</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Attribut:Beschreibung_EN"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Beschreibung_EN"/>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="&property;Beschreibung_DE">
+        <rdfs:label>Beschreibung DE</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Attribut:Beschreibung_DE"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Attribut:Beschreibung_DE"/>
+    </owl:DatatypeProperty>
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Project">
+        <rdfs:label>Projekt</rdfs:label>
+        <swivt:page rdf:resource="&wikiurl;Kategorie:Projekt"/>
+        <rdfs:isDefinedBy rdf:resource="&wikiurl;Spezial:ExportRDF/Kategorie:Projekt"/>
+    </owl:Class>
+    <!-- References to the SWiVT Ontology, see http://semantic-mediawiki.org/swivt/ -->
+    <owl:AnnotationProperty rdf:about="&swivt;page">
+        <rdfs:isDefinedBy rdf:resource="http://semantic-mediawiki.org/swivt/1.0"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&swivt;creationDate">
+        <rdfs:isDefinedBy rdf:resource="http://semantic-mediawiki.org/swivt/1.0"/>
+    </owl:AnnotationProperty>
+    <owl:Class rdf:about="&swivt;Subject">
+        <rdfs:isDefinedBy rdf:resource="http://semantic-mediawiki.org/swivt/1.0"/>
+    </owl:Class>
+    <!-- Created by Semantic MediaWiki, http://semantic-mediawiki.org -->
 </rdf:RDF>
