@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ontology.ethereal.cz/academia#"
+     xml:base="http://ontology.ethereal.cz/academia"
+     xmlns:academia="http://ontology.ethereal.cz/academia#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://ontology.ethereal.cz/academia"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#INV.Mediation1 -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/academia#INV.Mediation1">
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/academia#Authorship"/>
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/academia#Researcher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#INV.Mediation2 -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/academia#INV.Mediation2">
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/academia#Authorship"/>
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/academia#Publication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#INV.author_of -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/academia#INV.author_of">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/academia#Publication"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/academia#Researcher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#Mediation1 -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/academia#Mediation1">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/academia#Authorship"/>
+        <owl:inverseOf rdf:resource="http://ontology.ethereal.cz/academia#INV.Mediation1"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/academia#Researcher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#Mediation2 -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/academia#Mediation2">
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/academia#Authorship"/>
+        <owl:inverseOf rdf:resource="http://ontology.ethereal.cz/academia#INV.Mediation2"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/academia#Publication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#author_of -->
+
+    <owl:ObjectProperty rdf:about="http://ontology.ethereal.cz/academia#author_of">
+        <owl:inverseOf rdf:resource="http://ontology.ethereal.cz/academia#INV.author_of"/>
+        <rdfs:range rdf:resource="http://ontology.ethereal.cz/academia#Publication"/>
+        <rdfs:domain rdf:resource="http://ontology.ethereal.cz/academia#Researcher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#Authorship -->
+
+    <owl:Class rdf:about="http://ontology.ethereal.cz/academia#Authorship">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ontology.ethereal.cz/academia#Mediation1"/>
+                        <owl:onClass rdf:resource="http://ontology.ethereal.cz/academia#Researcher"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ontology.ethereal.cz/academia#Mediation2"/>
+                        <owl:onClass rdf:resource="http://ontology.ethereal.cz/academia#Publication"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="http://ontology.ethereal.cz/academia#Person"/>
+        <owl:disjointWith rdf:resource="http://ontology.ethereal.cz/academia#Publication"/>
+        <owl:disjointWith rdf:resource="http://ontology.ethereal.cz/academia#Venue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#Case_Report -->
+
+    <owl:Class rdf:about="http://ontology.ethereal.cz/academia#Case_Report"/>
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#Conference -->
+
+    <owl:Class rdf:about="http://ontology.ethereal.cz/academia#Conference"/>
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#Journal -->
+
+    <owl:Class rdf:about="http://ontology.ethereal.cz/academia#Journal"/>
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#Person -->
+
+    <owl:Class rdf:about="http://ontology.ethereal.cz/academia#Person">
+        <rdfs:subClassOf rdf:resource="http://ontology.ethereal.cz/academia#Person"/>
+        <owl:disjointWith rdf:resource="http://ontology.ethereal.cz/academia#Publication"/>
+        <owl:disjointWith rdf:resource="http://ontology.ethereal.cz/academia#Venue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#Position_Paper -->
+
+    <owl:Class rdf:about="http://ontology.ethereal.cz/academia#Position_Paper"/>
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#Publication -->
+
+    <owl:Class rdf:about="http://ontology.ethereal.cz/academia#Publication">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ontology.ethereal.cz/academia#INV.Mediation2"/>
+                        <owl:onClass rdf:resource="http://ontology.ethereal.cz/academia#Authorship"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ontology.ethereal.cz/academia#INV.author_of"/>
+                        <owl:onClass rdf:resource="http://ontology.ethereal.cz/academia#Researcher"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ontology.ethereal.cz/academia#Publication"/>
+        <owl:disjointWith rdf:resource="http://ontology.ethereal.cz/academia#Venue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#Research_Paper -->
+
+    <owl:Class rdf:about="http://ontology.ethereal.cz/academia#Research_Paper"/>
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#Researcher -->
+
+    <owl:Class rdf:about="http://ontology.ethereal.cz/academia#Researcher">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ontology.ethereal.cz/academia#INV.Mediation1"/>
+                        <owl:onClass rdf:resource="http://ontology.ethereal.cz/academia#Authorship"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://ontology.ethereal.cz/academia#author_of"/>
+                        <owl:onClass rdf:resource="http://ontology.ethereal.cz/academia#Publication"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#Review_Paper -->
+
+    <owl:Class rdf:about="http://ontology.ethereal.cz/academia#Review_Paper"/>
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#Survey_Paper -->
+
+    <owl:Class rdf:about="http://ontology.ethereal.cz/academia#Survey_Paper"/>
+    
+
+
+    <!-- http://ontology.ethereal.cz/academia#Venue -->
+
+    <owl:Class rdf:about="http://ontology.ethereal.cz/academia#Venue">
+        <rdfs:subClassOf rdf:resource="http://ontology.ethereal.cz/academia#Venue"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version [Not Released]) http://owlapi.sourceforge.net -->
+
