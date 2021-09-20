@@ -2,10 +2,8 @@
 
 | Type | Occurences |
 |---|---|
-| Achievement | 5 |
-| Achivement | 1 |
-| Acitvity | 1 |
-| Activity | 42 |
+| Achievement | 6 |
+| Activity | 43 |
 | Approach | 1 |
 | Document | 9 |
 | Evaluation | 1 |
