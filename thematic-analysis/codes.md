@@ -40,7 +40,7 @@
 | The Secretary | Role |
 | Meeting | Activity |
 | Consultation | Activity |
-| Course |  |
+| Course | Duty |
 | Workshop | Event |
 | Bureaucracy | Activity |
 | Publication Repository | Resource |
@@ -67,9 +67,9 @@
 | Graduate | Phase |
 | Enrollment | Activity |
 | Admission | Activity |
-| Assignment |  |
+| Assignment | Duty |
 | Stipend | Finance |
-| Duty |  |
+| Duty | Duty |
 | Supervision | Activity |
 | Apprenticeship | Activity |
 | Peer Review | Activity |
