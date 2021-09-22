@@ -5,7 +5,7 @@ Research project (brief) description: This research project deals with the quali
 ## K-CAP'21
 In this repository, you can find data used in this research and the results produced from qualitative experiments such as thematic analysis and story modeling.
 
-### Modeled stories
+### Modeled stories, concept maps in [ContextMinds](https://www.contextminds.com)
 - [Jindrich's story](https://app.contextminds.com/?m=1nW6E)
 - [Marek's story](https://app.contextminds.com/?m=L2J7e)
 - [Elvira's story](https://app.contextminds.com/?m=YBE7j)
@@ -17,8 +17,12 @@ In this repository, you can find data used in this research and the results prod
 
 ### Thematic analysis
 - [Annotated stories](https://github.com/nvbach91/phd-odyssey/tree/master/thematic-analysis/annotated-stories)
-- [MAXQDA project with codes](https://github.com/nvbach91/phd-odyssey/blob/master/thematic-analysis/PhD%20Odyssey.mx20)
+- [MAXQDA project with codes](https://github.com/nvbach91/phd-odyssey/blob/master/thematic-analysis/PhD%20Odyssey.mx20), download [MAXQDA software here](https://www.maxqda.com/trial)
 
-
-
+### Additional resources and documentations
+- [Literature review for causal ontologies](https://docs.google.com/spreadsheets/d/1TUs8uR-lFz60JxEF3QTPNcvyfplKotnqq1oBIIodGRg/edit)
+- [PhD interview guide](https://docs.google.com/document/d/1HrbjdNSwDoMETDCq0TlNkF0boy0LVqN2ZqPG3d9Nlb0)
+- [PhD story terms](https://docs.google.com/spreadsheets/d/15FpffJOqJpdDTYP8Sl3i_B36AIzt91uLSu0UrlpyFDg)
+- [PhD story modeling guidelines for ContextMinds](https://docs.google.com/document/d/1L6ooohg2y965WMe3wkfBiLYU5NipTANekAmaqn9uDUc)
+- [Goald-directed PhD story modeling methodology](https://docs.google.com/document/d/1T7eBxcPYdWQRslb8bjoj8_MvqKRXd7jPGdERR6zBsLo)
 
