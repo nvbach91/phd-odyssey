@@ -25,4 +25,5 @@ In this repository, you can find data used in this research and the results prod
 - [PhD story terms](https://docs.google.com/spreadsheets/d/15FpffJOqJpdDTYP8Sl3i_B36AIzt91uLSu0UrlpyFDg)
 - [PhD story modeling guidelines for ContextMinds](https://docs.google.com/document/d/1L6ooohg2y965WMe3wkfBiLYU5NipTANekAmaqn9uDUc)
 - [Goald-directed PhD story modeling methodology](https://docs.google.com/document/d/1T7eBxcPYdWQRslb8bjoj8_MvqKRXd7jPGdERR6zBsLo)
+- [Story collection approaches](https://docs.google.com/document/d/1Nl887yvaijbGOaO0mLEQ1d7zTqzg8aw7g_0PghMTtQA)
 
