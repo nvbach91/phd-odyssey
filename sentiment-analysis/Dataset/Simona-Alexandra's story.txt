@@ -1,0 +1,25 @@
+Our @csmcr alumni - Simona Alexandra, helping build software that powers the new generation of smart clothing
+Life after study Student experience 27th October 2021
+
+Simona is a Computer Science University of Manchester alumnus. She studied BSc in Software Engineering and graduated in June 2020.
+
+Hello Simona! Can you tell us a bit about your education before university?
+I finished high school in Romania, and it was focused on Maths, English, and Programming. Similar to A levels in the UK, this was my initial foundation towards becoming a software engineer.
+
+What career has your BSc in software engineering led you to?
+I am a graduate software engineer at Prevayl, a start-up company based in Manchester. My job focuses on helping build the software that powers the new generation of smart clothing. I focus on building react native features for the mobile application, as well as dealing with the infrastructure and logic behind the app.
+
+In terms of the impact of my work, I get to be part of the team that revolutionises how people train and how their performance is dynamically analysed and used to offer powerful insights and training advice.
+
+Did your studies in Computer Science at UoM prepare you for this career path?
+My studies at UoM have played a great role in opening a new world of opportunities around me. Moreover, having studied here has given me the foundation for a great software engineering career. I got to grasp fundamental knowledge from various computer science fields which have allowed me to find my path in the industry.
+
+Simona Alexandra UoM Computer Science StudentDid you participate in any additional activities at UoM that may have helped you secure your job and gain more holistic life skills?
+I was part of UniCS and handled social media posts for my first year of university. I was also a volunteer for the Great Uni Hack during my second year of university and I participated in a few hackathons myself over the years. Through these activities, I learned more about cooperation, communication, organisation, as well as being part of a community of students with similar interests. Whilst hard skills are important in my job, soft skills are a crucial aspect of being part of a team so participating in extracurricular activities has helped me in that regard.
+
+How did you go about job hunting and what tips do you have for current students?
+I started job hunting in my last year at UoM, around November. If you want to secure a graduate scheme, it's important to start early so you can go through a few interviews and get familiar with the process. I usually kept track of what companies I applied for, what interviews I had lined up, and rejections/successes in an Excel sheet to avoid becoming overwhelmed. It can be nerve-wracking in the beginning, but if you have a good CV, a wish to learn, and a positive attitude then it's much easier to find and secure a job.
+
+How have you found working life compared to student life? How have you had to adapt?
+I think every change comes with positive and negative aspects. Whilst university life gave me more flexibility in terms of my schedule, having financial stability and a more close-knit team of professionals to learn from compensates for that. After university, I had to define and adapt my priorities to accommodate a new schedule and learn budgeting skills. It's a big transition, but I became accustomed to it after a few months. It's exciting to start new chapters in life and I am thankful and proud of my whole journey from being an undergrad at UoM to working in the software engineering team at Prevayl.
+

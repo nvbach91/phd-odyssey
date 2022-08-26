@@ -1,0 +1,115 @@
+Studying a PhD whilst at CERN, with Joshua Dawes.
+Life after study Student experience 5th November 2019
+
+Joshua Dawes is 25 years old, from the UK and a final-year PhD student in Computer Science.
+Although Joshua is studying his PhD with The University of Manchester, for the entire period of the
+programme he's actually based at CERN in Geneva, Switzerland on CERN's Doctoral Student
+programme.
+
+
+
+Here we find out more about Joshua's research and why he came to choose to study Computer Science at Manchester...
+
+Hi Joshua, why did you want to study your PhD with The University of Manchester?
+I actually did my undergraduate degree in Computer Science and Maths here at The University of Manchester too. Part of my degree was a placement year and I did mine at CERN at the CMS Experiment. While I was there, my interest in doing a PhD after my bachelors reached its
+peak and my team at CERN helped me to decide on a topic. At the same time, my future
+supervisor at Manchester was looking for PhD students and he had the perfect balance of
+interests for the idea we had at CERN...after a short skype call, we had a project proposal
+and an agreed supervision team. I got *ridiculously* lucky and ended up with an unconventional but ultimately ideal supervision team!
+
+Can you tell us a little bit about your research?
+When I explain my research to anyone who asks, I start by saying that it's aimed at automating, as much as possible, the analysis of
+the behaviour of computer programs. At the moment, the focus is on Python programs.
+What actually happens to reach this goal consists of developing a lot of theory and then,
+based on the theory, implementing tools for developers to use. These tools let software
+engineers:
+
+1) describe how their system should behave;
+
+2) check whether it's actually
+behaving like that when the program runs; and
+
+3) find the places where there might have been a deviation from expected behaviour, and then try to determine why.
+
+The tools are publicly available - http://cern.ch/vypr and the research is described in
+significantly more detail in publications listed at http://cern.ch/jdawes.
+
+
+What do you enjoy most about studying/researching?
+I was lucky to be able to get a supervisor for my PhD who was interested in the applied
+aspect of what can be an extremely theoretical field. Of course there is a large
+theoretical aspect of my research, but there's an over-arcing theme of "research from
+demand". In other words, when we develop theory we steer it by what we know is
+needed in our practical setting. This generally strengthens results and adds another layer
+to the work we're doing: of course the main reason for doing everything is to get the PhD
+at the end, but you're also working on a kind of product.
+
+From this "product" view comes a whole other area of things you have to learn about: how to market your research. Being
+good at this is really hard. Working out how to hit the mark with an audience who could
+benefit from your work (but whose interests are not in the research needed) takes
+practice! This is one of the things I love about how my PhD has ended up.
+
+How do you see your time at The University of Manchester helping with your career
+plans?
+Technically my time at Manchester is also my time at CERN, and starting my career in an
+applied environment, which is where I want to stay, has been perfect for me. CERN has
+the perfect mix of industry and academia; I can do research (engineering and theory) and
+publish, and then there are places to actually apply what you've worked on.
+
+Has your time studying at The University of Manchester & CERN caused you to rethink or alter
+your career plans?
+My PhD has completely changed my career plans. When I first started, I was ready to be a
+theorist. But now I've spent a lot of time in this world that's a mixture of theory and
+practice, I want to stay. I enjoy working on theory, but ultimately what I really get
+excited about is seeing things being applied outside what I'm familiar with.
+
+What would you say to people considering coming to Manchester to study?
+I can't say anything about the environment for PhD students who are permanently here,
+but I support doing a split-site PhD* (working with industry, as long as there's a research
+culture in the part of industry you work with).
+Doing a split-site PhD can be tricky. There are different perspectives involved and,
+ultimately, the priority is for you to get your PhD, so you have to be careful to balance the
+things you're working on. For example, there have been moments when I've been aware
+that what I was working on was no longer important for my PhD. These are the moments
+that shouldn't become too frequent.
+
+And outside university... what do you get up to in your spare time?
+I'm lucky enough to live in a beautiful part of the world, so I try to explore as much as I
+can. This includes little day trips, snowboarding in the Alps, longer breaks with my other
+half or travelling for work.
+
+
+I make sure to stay active by running and doing yoga (if you haven't, you should definitely
+try it - it's great). I can't emphasise enough the importance of being active (okay
+sometimes I have periods, especially when I travel for work, where the active lifestyle
+takes a break).
+Finally, since I live in the French-speaking region of Switzerland, I really enjoy using my
+spare time to practice French. Whether it's talking to people or watching movies...
+interacting in your second language is a unique experience.
+
+Can you tell us the best way for a student to do a similar programme to you and what opportunities there are available at CERN?
+Firstly, CERN has a few student programmes for students at different stages in their studies. My
+first contract with CERN was a Technical Studentship for 13 months. These contracts last
+for 6-14 months and give students a good feel for life at CERN and in the surrounding
+region.
+Another amazing opportunity at CERN is the Summer Student programme. This involves
+students coming from all over the world for up to 3 months to see what exactly goes on
+here. At the time of writing this, I've supervised three students on this programme and I
+can't emphasise enough how much people can take from it. I like to put it at least a bit
+down to my supervision, but the summer spent at CERN has enough impact that 2 out of
+my 3 past students have since applied to come back with longer-term contracts.
+
+Finally, I want to promote PhDs in general. They are hard, but you gain experience in so
+many different areas and you become confident in loads of situations. I think the main
+purpose of your PhD is to teach you how to do research. For example, you learn to estimate how promising a given direction is; how to explain your research; and
+how to operate in an environment where your research is just one moving part out of
+many.
+
+Besides this, I think you learn so much about the world. You travel to communicate your
+research (at the time of writing this, I've had the privilege of giving talks in 4 countries
+and will fly tomorrow to give a talk in a fifth country), you work with people from
+different backgrounds (professional and cultural) and you see how research fits into the
+wider world (not just a corner of academia to which your PhD contributes).
+
+Joshua
+
