@@ -1,0 +1,46 @@
+Can you briefly describe your research?
+Trinh: Streptococcus pneumoniae (pneumococcus) is a Gram-positive bacterium that causes a million deaths of children, elderly, and immunocompromised annually due to pneumonia, septicemia, and meningitis. We hypothesize that the DNA uptake or cell attack by competent pneumococci is initiated by an external 1-2 µm long, 5-nm-diameter filament, called the com pilus. To obtain a more dynamic view of the pneumococcal competence pilus, we genetically introduced cysteine codons into major pilin ComGC with the objective that solvent-accessible cysteines could be labeled with fluorescently conjugated maleimide dyes. We demonstrated that this labeling strategy revealed that pneumococcal competence pili are highly dynamic, undergoing cycles of extension and retraction over timescales of seconds, and its retraction is required for DNA uptake. Then, to overcome the limitations of conventional bulk methods, we developed a droplet microfluidic system capable of isolating individual episodes of bacterial transformation between two pneumococci. To determine the relevance and reliability of this new method for the study of bacterial genetic transformation, we compared recombination events of recombinants recovered from the droplets vs. those in parallel bulk culture mixtures by whole genome sequencing. This study demonstrates that droplet microfluidics can provide a new method to study bacterial genetic transformation at the level of individual cells.
+
+How would you describe your PhD journey?
+Trinh - My routine was very flexible and was predicated on the type of experiment and project I worked on at a particular time. I remember during my bacteria experiment, lunch and dinner were mostly skipped. The only thing that was constant during my PhD program was the ‘weekend experiment’. I also remember how I worked every single weekend, 7 days a week, for 6 months during a particular project I was involved in. Another reason for the flexibility of my routine was because of the facility’s availability. So most times, I had to adjust my schedule to be based on if the room, tool or resources to be used for my project will be available or not at a particular time.
+
+How was balancing value/skill during your PhD?
+Trinh: I followed this mantra during my PhD program—80 percent of my time was used for my academic life while I spent 20 percent of my time doing what I loved. My mental health is very important to me. For instance, I registered for a fitness class and piano lessons and some other kinds of activities like this to keep my mental health stable.
+
+Would you advise anyone to go into a PhD program?
+Trinh: First, for those currently in a PhD program, it is important to take care of your mental health before anything else. Also, it is important to do a PhD not for money. Do it because you like to research. Any purpose other than that might make you quit during your PhD program. Do it because you are passionate about it as anything outside passion will fade away.  Also, when you’re getting into a PhD program, please be more concerned about the lab you will be working with. Don’t go for only university ranking. Having a good lab to work with for 5 - 6 years of your research will be very helpful. When it comes to publishing papers, it is important to understand that submitting your manuscript and getting rejected does not mean you are not good enough, it means the journal’s focus and readers are likely not the target audience for the type of research you have done. Also, applying for a PhD program and getting rejected doesn’t still mean that you have failed, it can also mean that the professor/school does not have funding for your type of research. Learn how to stand up to rejection. Rejection may not only be about you.
+
+Do you have any regrets about your PhD program?
+Trinh -  Perhaps, I should have had more external collaborators. All my Ph.D. papers published were first-authored papers. This is because my PhD research was like a big story. I had no time to be involved in other research as mine mostly involved microfluidics and microbiology. It was not easy to be disconnected or to collaborate with other students  based on the type of research I did. I honestly wish I had more time.
+
+
+What lessons have you learnt that you think are transferable to students who are enrolled in a PhD program?
+Trinh: Don’t procrastinate. It is very important. For your experiment, get a good notebook because you never know when you’ll need these data. In microbiology, your lab medium might be wrong but knowing what went wrong at each point can be a source of truth for you in future. People never believe if you tell them you are right. People believe data and it is a good source of evidence. Also, your lab is your family - never forget.
+
+
+What are your plans for the next step? Academia or Industry?
+Trinh: I am an incoming postdoctoral researcher in the Bay area but my concern is typically solving the immediate need of the world and expanding my abilities. I need to have a lot of skills and these skills can be transferable across board. But I will regard ’postdoc’ for me now as a safe option so that if in future I need to do research in academia, I can pivot. If I need to move to industry, I also can. But generally, I love learning and I am concerned about bridging the gap between academia and industry by having a lot of intertwined experiences.
+
+If you were to get another PhD, what field will you consider?
+Trinh: I would likely get a PhD in microbiology. I love bacteria. I love biology. My PhD research was 50% microfluidics and 50% microbiology. I would love to learn it even further and be an expert in genetics. My Idol is Dr Jennifer Doudna.
+
+
+How was your thesis style? What is story-based or chapter-based?
+Trinh: My thesis was story-based. So I had one big method,  one big introduction etc.
+
+Did you have any other mentors apart from your advisor during your PhD program?
+Trinh: My committee members and everyone that contributed to my publications mentored me directly or indirectly.
+
+
+What was the most exciting memory you had in your PhD program
+Trinh: I have three big projects with a very touching story. But, I wouldn’t bore you with this story. However, I remember when I had to collaborate with other institutions. I sent some of my bacteria samples to that effect. Then, I was told that the bacteria sample contained some mutations. This meant that years of my research were in vain. I cried every day for two weeks. I had two supportive advisors who kept encouraging me and telling me that there is no way those mutations could exist in that sample. The most exciting moment for me was when we were later told by the institution that there was no mutation. You could have imagined how I felt, haha! I was so excited. Faith in humanity restored, lol.
+
+With the way people tend to microwave their success, does writing paper come easy to you?
+Trinh: Paper writing doesn’t come easy to me. Apart from the logic involved, while writing a paper, there might be a need to carry out other experiments to explain your point more clearly. And even after writing your paper, you might still need to do other experiments to validate your result.
+
+How did your relationship impact your PhD success?
+Trinh: Taehoon is a very supportive partner, and was very supportive throughout my PhD studies. During ups and downs, he understood me as a researcher. He understood the workload involved in my research. He has no discrimination against women in science and shares ideas about my research. Also, he was around to help me emotionally because getting a PhD can honestly be emotionally draining. He supports my career and he supports my life. Like I always say: Don’t find a prince. Be a queen and whoever you meet next in life might be a king.
+
+​​What does fulfillment mean to you?
+Trinh: Family is everything to me. I want to be able to take care of my family. I want to be able to take care of my life without worry. I want to be financially free.
+

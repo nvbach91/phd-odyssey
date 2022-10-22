@@ -1,0 +1,220 @@
+My desire to study abroad has been arising since the 9th grade, but I never had a full plan until I graduated from the university. I only know that I have a good education and many people advise me to study abroad. Only after graduation from the college, I have just formed the major, level of study and the college abroad I should pursue to study.
+
+1. The process of asking for PhD study
+
+1.1. The decision of studying postgraduate education
+
+I studied the Talent Engineer program in Electronics and Telecommunications at Hanoi University of Technology. In the early years, I was taught English for the TOEFL test - just to have a good English certificate for the future. My grammar was so good, but the listening and speaking skills were very bad.
+
+In the fourth year of college, the program had changed that TOEFL or IELTS certificates were required when we finished the Talent Engineer program. After three years of studying TOEFL without making much progress, I occasionally took part in an IELTS course with a friend and found that this certificate was more suitable for me. After one year of studying, I achieved 6.5 scores in IELTS in March 2012, which was necessary condition to apply to universities in the United States.
+
+ 
+
+After having an IELTS score, my teacher named Nam, who instructed me at Hanoi University of Technology, encouraged me to apply for a PhD program in US universities and reminded me of Vietnam Education Foundation (VEF). I had heard about the VEF program for a long time but I have never dared to find out what they were asking for because at that moment I thought this program was out of my reach. When having IELTS score, it was the time the VEF was about to expire and I still had not achieved  the GRE score yet. I thought of finding scholarships of universities in Europe, Korea, or Japan because I thought that those were suitable for my ability. However, Mr. Nam told me: "Your profile meets all conditions to go to study abroad in the US, I will only write a letter of recommendation for you if you choose to go to America." I was little more confident and determined to start from that moment. However, I still could not wholeheartedly file a resume because my graduation theme had not been completed.
+
+ 
+
+1.2. Difficulties before preparing
+
+In June 2012, I graduated from the Hanoi University of Technology. My teacher had another important project so I continued to work with him until mid-August, I focused on profile for the US. I only had four months left for preparing profile in mid-December. I was really worried that other people usually spend two or three years for preparing the application.
+
+ 
+
+I had just got an IELTS score, without GRE and any scientific papers, and also had no a clear research direction beyond going to Digital Image/ Signal Processing. The knowledge I learned about hardware in the college did not seem to help my profile growing stronger. I almost had nothing but the belief of my teachers, my friends, and my own.The first step was to get a GRE certificate. I found a group of about fifteen friends reviewing GRE. The group studied three time a week at a book cafe in Hanoi. On the first day, I saw that all people studied really seriously and methodically. I was so lucky because after the GRE exam, the group also  gather together to file and helped each other a lot. The group continued to keep in touch and help each other in after years.
+
+ 
+
+Since being out of the college, I limited my family allowance and my income earned mainly from teaching more. I was quite worried because every session costed 20k for coffee, and then the fees for sending the application to the US and the application fee to universities. My parents had invested me in learning English so much in previous years so I did not want them to carry more burden. Parents also did not understand my ability to be studied abroad and often anxiously advised me to consider going to work.
+
+ 
+
+I applied for the 2012 Honda YES scholarship with high expectations but failed. At that time I had a quite financial crisis. Fortunately, I always get help in difficult times. Ms. Phuong of the GRE Group gave me a $ 500 envelope and said, "I believe that you will succeed so you can give me back when you go to the US." Brother Nam called me to his office and gave me a thick envelope: "I worked with me in two important projects, so I have a little paying for you and also support you more in the application. Wish you to success". I was really touched, and felt more touched when coming home, I opened the envelope and saw a large amount of money inside. These funds were extremely important to me at that time, surely I would never forget! This time, Mr. Long - my brother - helped me a lot, although he also worried about my ability to succeed.
+
+ 
+
+1.3. The process of selecting university and sending the application
+
+In September 2012, I just reviewed GRE and started to search information about universities in the US at the same time. I visited the USNews website for seeing the rank of all universities training in Electrical Engineering (EE). Then I dropped out of the top 10 universities because surely I did not have the ability to pass. For each university in the list from 10 to 50, I accessed to the EE Department website to find professors who work on the major of digital signal processing and sent them emails to look for opportunities. I also sent emails to some Vietnamese professors at those top universities.
+
+Most professors did not reply. Lecturer Ming Do at UIUC said that my profile was so good, but he did not intend to recruit more students in that year and suggested that I should submit to other teachers in the department. Some other professors replied but said that they could receive me but no financial support. Only Mr.Vishal Monga from Penn State responded positively, just one day after I sent email:
+
+“Your application seems interesting. I certainly like students with a strong foundation in linear algebra and probability.
+
+Please just apply to Penn State EE.”
+
+This email made me very glad and found all ways to make the best application to Penn State
+
+I took the GRE test on 17/11/2012. The score was just enough to submit (Verbal 145, Math 167, Writing 3.0). I knew that if I tried harder, the GRE score wouldn’t be improved much, so I concentrated on preparing other documents.
+
+I only had the funds to apply to five universities, of which Penn State was the one I hope most. My only interview was with teacher Vishal Monga on 28th of Lunar December, 2013.
+
+I failed to those four universities, only teacher Vishal Monga sent me an email to inform that I was accepted on March 21, 2013.
+
+2. The process of getting PhD degree
+
+2.1. First PhD session (08-12/2013)
+
+I arrived in the US in early August, 2013
+
+I entered the lab with a friend named Yuelong Li from China in the same year. The first thing I had to do was take an English test to see if I must learn more. Since English communication is less important in the technical field, so although my English was so poor, he still accepted me to the lab.
+
+ 
+
+As a result, Yuelong only had to take one more course, while I had to take three courses of presentation and one academic writing course - the maximum number of courses for an international student at Penn State.
+
+ 
+
+Beyond English, in the first session I took more 2 courses of the Linear Algebra and the Statistics and Probability. Yuelong also attended to these courses with me and his in-course score was very well and usually better than me a little bit. After many years of not learning math, I again felt my passion for it coming back when studying these two subjects. In my class, I spoke a lot although my English is bad. I was almost a best student in the Statistics and Probability class because many times I was the only one who can answer teacher’s questions.
+
+In this first session, I was reminded so much by my teacher to prepare for an important exam called candidacy exam. I can only continue my PhD course if I pass this exam. The faculty allowed us to take the exam twice but my teacher only allowed us to take it once. He always reminded us that formers in the lab were not only passed, but also they often achieved the highest results in the faculty, that we had to prepare seriously.
+
+ 
+
+The candidacy exam had content mainly from statistical probability, so during the process of reviewing to take the final exam of Statistical Probability, I had accumulated a lot of knowledge. But this was one of the two subjects I got A-
+
+ 
+
+In the winter break in 2013, after traveling with the GRE group (almost people in my GRE group went to America in that year, 2 people in rest went out in 2014), I focused on the exam for candidacy. I got 49.5 / 50, ranked first in the faculty and higher 0.5 point than Yuelong (it is the first time I got better than Yuelong). The result of this exam made me more confident. I seemed to have recovered my passion which had been lost in the studying time in the college.
+
+ 
+
+I officially became a PhD candidate. The rest of the PhD course was a comprehensive exam and three transaction papers to graduate. This was a difficult task but I always believed that I can do it.
+
+ 
+
+2.2. Continuing one year and a half
+
+In the spring of 2014, I learned Pattern Recognition and began to enjoy machine learning. I learned by myself the course of Machine Learning taught by Andrew Ng and then the Convex Optimization of Stephen Boyd. I chose machine leaning for my favorite, and chose Convex Optimization because that was the strength of the lab. The research works of the lab were all optimized.
+
+ 
+
+At that time, my lab mainly solved the problems of classification based on building the sparse model. It was not generally required to study these algorithms but so relatively difficult to make decision for solving an optimal problem. I really liked the sparse models and the mathematical algorithms so I chose the direction of research on the dictionary learning.
+
+ 
+
+In the summer of 2014, I was assigned the first topic of classification and detection of cancer cells in medical images. This problem was partly solved by a graduate student in the lab. I was tasked with improving the accuracy of taxonomy algorithm. With my limited knowledge at that time, I just came up with a very simple idea. The idea was so simple that I did not believe that it wasn’t used by any papers. Sometimes I also did not think that this idea could be written into a scientific paper. I tried to make the idea more complex in different ways and programed all the ideas I had. I changed the algorithm every day much so that my coworker almost had to scold harshly: "I don’t know why you keep changing ideas”. Finally, as the deadline approached, I had no choice but to return to the simplest idea. After a few minor changes, that algorithm worked very well.
+
+ 
+
+The first four-page paper I wrote and edited many times according to the comments of my teacher and coworker for over three weeks. I submitted the paper then I was so worried that I had ever dreamed that the article was rejected because its idea had been used before. Thankfully, that did not happen and my first scientific paper was accepted.
+
+ 
+
+My confidence increased a little bit
+
+2.3.Last three years
+
+As mentioned above, there was a rule in my lab that we must have at least three papers in major magazines before graduation. (You can see more about the Process of writing and commenting on scientific papers.)
+
+ 
+
+My teacher asked me to prepare everything for expanding just accepted conference paper. In my lab, normally at the conference, we would present all the results of the respective articles. I tried my best to get results early, at the same time presented and consulted my colleagues at the conference.
+
+ 
+
+After attending the conference in April 2015, I wrote a paper and by June 2015 I submitted the first draft to a famous magazine on Transaction on Medical Imaging. Luckily, I received a response in early August, submitted an update in late September, and received an accepted email in late October. Total processing time was over four months - very fast compared to average time.
+
+ I felt that my PhD course seemed to be smoother than the others.
+
+ 
+
+After the first journal entry, I had to prepare for the second exam in the comprehensive exam. In this exam, I had to present the idea of ​​graduation theme in front of a board of four professors. Everything went smoothly because I had a magazine article and proposed a new idea for the problem of classification. When having an accepted paper, the protection for proposal became simpler.
+
+ 
+
+After this milestone, I realized a change in the way my teacher talked to me and I also felt more confident when talking to him.
+
+ 
+
+Actually, I knew that many PhD candidates could graduate with just one scientific article. Of course, I did not want to stop there.
+
+ 
+
+In February 2016, after submitting another conference paper, I freely came to Vietnam for Tet holiday. Earlier I received a message that a Vietnamese-American scholar at the US Army Research Lab - a friend of my instructor - accepted me as a summer internship in 2016. I also came back there to practice again in 2017.
+
+ 
+
+Until now, I have found it a pity that I should find an internship program at a major technology company.
+
+ 
+
+After the comprehensive exam, I had two more magazine articles and was writing one more. I also had a few conference articles, including one listed in “Finalist for the best student paper award” on the ICASSP 2017 (more than 1000 articles were accepted, about 20 of them were proposed for the best article award.
+
+ 
+
+My instructor was quite proud of me because this was a big conference in the industry. Seeing him being proud of me, I also had the same feeling of myself.
+
+With the high number of articles and quotes, I received the excellent dissertation in the faculty in April 2018, before defending the PhD dissertation successfully on 11/9/2018.
+
+ 
+
+2.4. What did I do besides studying time?
+
+ 
+
+PhD course was a long process. Since I did not have a master's degree at the beginning, the program would last for at least five years. During this time, I needed to find for myself more fun besides my research.
+
+ 
+
+Firstly, I needed to make friend to other students. I was so lucky because there were a lot of Vietnamese students in Penn State. There were a number of Vietnamese families here so I soon found some friends. In the early years, when I was close to college students, I regularly participated in the activities of the Vietnam Student Association. But they graduated gradually and instead being younger students who were more younger about seven or eight years old than me. I gradually found myself not to be suitable for that generation anymore. Fortunately, I was in the late 8x generation but still able to talk to the early 8x, even 7x generations, an had a quite good relation with them. Fortunately, I made friend with two families Mr Quang-Mrs Hang and Mr Long – Mrs Duy. I  would never forget beautiful memories with these two families.
+ 
+
+The next was the cooking. I did this for myself because I was away from home when I was nine years old. However, the story of cooking while studying PhD was completely different. In Vietnam, I would have many options if I did not have time for cooking. But in the US, at my living area, Vietnamese food was very limited. Food was generally expensive and a meal was often not good and not enough. Fortunately in my town, there were many Asians, so there were two small Asian markets in which selling all items to make dried-fish, noodle in crab chowder or anything that I remembered. Youtube, memory and imagination helped me to cook a lot of dishes. Later, I and my wife can take turns cooking every day.
+
+ 
+
+I had a lot of free time in my early years. The first time I called so much to my friends in Vietnam. Then they were busy with their family and due to time difference so I talked less. I bought kindle and downloaded novels and history books for reading. I returned to reading pleasure as being in high school. At that time,  there was one year I read up to 30 books. In  the last time of PhD course, I read less because of being busy with many things including writing this blog.
+
+ 
+
+Another important pleasure was sport. In US, almost people played sports, there were many beautiful people while I was so thin. I played a lot of subjects: running, football, biking, swimming, climbing, bouldering. When having a good physical health, my mental health was also better to study long-distance PhD course.
+
+ 
+
+Do not let yourself be sick in the United States. You have to take care of yourself because everyone has their own business. The medicine is so expensive and you still have to work when you're little sick.
+
+Summer in 2016 while practicing at the United States Army Research Laboratory, I had a lot of free time because I submitted the second magazine paper. I created a basic LaTex Tutorial channel on Youtube. Since my lab required all reports, articles and slides to be made using LaTex, after three years of working, I was quite confident with my LaTex skills. All of my PhD drawings were also painted by using LaTex with high quality. So I would like to share what I know through this Youtube channel.
+
+ 
+
+However, I soon realized that the creation of clips took a much time and very difficult to edit later. The number of viewers was also less because LaTex selected learners. I stopped to make clips after about two months.
+
+ 
+
+In the winter vacation at the end of 2016, I was in the fourth year of the PhD program, I began to make plan for job application after graduation. At that time, machine leaning / deep learning developed so much and it was discussed in everywhere. I found that I needed to prepare my knowledge about this field. I joined a small group in Vietnam to translate "Deep learning" but soon left the group. I found that this group did not work so well and many members had not mastered the basic concepts. I started to think of self-rewriting algorithms in my own way.
+
+ 
+
+And the blog 'Basic Machine Learning' was born, then Facebook page, facebook group, fundaml, ebook, books (printing) and most recently being basic Machine Learning forum.
+
+3. Difficulties appearing at the end of the road In last year of the PhD program, I had almost no new scientific work. That's because I spent a lot of time on basic machine learning, partly because I knew that I was qualified to graduate, and the rest was that I had to concentrate on applying for a job.
+
+ 
+
+Unlike other members of the lab, the publication of my papers was pretty smooth. All papers having my name were accepted. And unlike all graduates, my job application process was a lot harder. Before me, other graduates also got a job in Apple, Microsoft and many other research labs. So I was also confident that I could get a job in two or three months and be able to graduate in the summer of 2018.
+
+ 
+
+In the years before asking my instructor to practice at the companies, he always said that I should not worry too much about the job, that I needed to calm down, that I could get a good job because of my good ability.
+
+ 
+
+My job application lasted half a year from the end of February to the end of August, 2018. I made about 50 phone interviews and onsite interviews at eight companies, flied about twenty or thirty trips and drove up to thousands of miles in the summer. I liked Seattle but three companies that invited me to the interview all said that I lacked practical experience. The same thing happened with me in two companies on the East Coast of the United States. Close on graduation day, I received two acceptance letters at two startup companies in Sillicon Valley. After consulting with many friends, I decided to take the position of 'Deep Learning and Computer Vision Researcher' of a self-driving car company. I was the 13th employee of the company.
+
+ 
+
+My teacher joked that no one had many onsite interviews like me, and always encouraged me to be confident because there were so many companies calling for interviews like that. In my opinion, this was quite understandable because other people had the job after to be interviewed by two or three companies so they stopped. I was sad after receiving the first refusal emails but afterthat I did not have time to be sad because I had to worry too much about many things including personal works in the summer of 2018. I was sad but never lose hope.
+
+ 
+
+4. Conclusion The day for defending my graduation thesis was at the end of May but it was postponed to early September. I could not defend the thesis without a job because the visa did not allow me to stay too long without work. I had to schedule a thesis protection before getting a job because it was too late. Since August, I was no longer received salary, but I had to pay tuition and insurance for the fall. I knew that I did not have much time and the amount of savings could only help me live three months in the US. Luckily, all good things came together.
+
+ 
+
+Always hope, but do not expect too high. Be hopeful and optimistic because negative thoughts never make things better. Do not expect high results if you do not want to collapse.
+
+ 
+
+The America teachs me the way to always try, to keep my faith and health for long-term goals.
+
+Best things come to those who wait. (03 - Vu Huu Tiep's story, Pos. 1-69)
